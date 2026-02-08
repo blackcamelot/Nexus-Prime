@@ -1,0 +1,192 @@
+NexusPrime_Project/
+├── Assets/
+│   ├── Scripts/
+│   │   ├── Core/
+│   │   │   ├── GameManager.cs
+│   │   │   ├── GameState.cs
+│   │   │   ├── PlayerData.cs
+│   │   │   └── SaveSystem.cs
+│   │   ├── Economy/
+│   │   │   ├── ResourceManager.cs
+│   │   │   ├── Resource.cs
+│   │   │   ├── ResourceProducer.cs
+│   │   │   └── ResourceType.cs
+│   │   ├── Units/
+│   │   │   ├── UnitMovement.cs
+│   │   │   ├── UnitStats.cs
+│   │   │   ├── CombatUnit.cs
+│   │   │   ├── SelectableUnit.cs
+│   │   │   └── UnitFactory.cs
+│   │   ├── Building/
+│   │   │   ├── BuildingSystem.cs
+│   │   │   ├── Building.cs
+│   │   │   ├── BuildingGhost.cs
+│   │   │   └── BuildingType.cs
+│   │   ├── Technology/
+│   │   │   ├── TechTreeSystem.cs
+│   │   │   ├── Technology.cs
+│   │   │   ├── TechTreeData.cs
+│   │   │   └── ResearchManager.cs
+│   │   ├── AI/
+│   │   │   ├── AICommandManager.cs
+│   │   │   ├── AIFactionController.cs
+│   │   │   ├── AIProfile.cs
+│   │   │   └── BehaviorTree/
+│   │   │       ├── AIBehaviorTree.cs
+│   │   │       ├── AIActionNode.cs
+│   │   │       └── AIConditionNode.cs
+│   │   ├── UI/
+│   │   │   ├── UIManager.cs
+│   │   │   ├── UIAnimator.cs
+│   │   │   ├── ResourcePanel.cs
+│   │   │   ├── UnitCommandPanel.cs
+│   │   │   ├── SelectionManager.cs
+│   │   │   ├── TechTreeUI.cs
+│   │   │   ├── Minimap.cs
+│   │   │   └── DialogueSystem.cs
+│   │   ├── Campaign/
+│   │   │   ├── CampaignManager.cs
+│   │   │   ├── Mission.cs
+│   │   │   ├── MissionObjective.cs
+│   │   │   └── MissionReward.cs
+│   │   ├── Factions/
+│   │   │   ├── FactionManager.cs
+│   │   │   ├── Faction.cs
+│   │   │   └── FactionData.cs
+│   │   ├── Audio/
+│   │   │   ├── AudioManager.cs
+│   │   │   ├── MusicManager.cs
+│   │   │   └── SFXManager.cs
+│   │   ├── Network/
+│   │   │   ├── NetworkManager.cs
+│   │   │   ├── PlayerNetwork.cs
+│   │   │   └── MatchmakingManager.cs
+│   │   └── Utils/
+│   │       ├── ObjectPool.cs
+│   │       ├── Extensions.cs
+│   │       ├── MathHelper.cs
+│   │       └── Singleton.cs
+│   ├── Resources/
+│   │   ├── Config/
+│   │   │   ├── GameConfig.json
+│   │   │   ├── TechTree.json
+│   │   │   ├── UnitDefinitions.json
+│   │   │   ├── BuildingDefinitions.json
+│   │   │   └── FactionData.json
+│   │   ├── Localization/
+│   │   │   ├── English.json
+│   │   │   ├── Italian.json
+│   │   │   ├── Spanish.json
+│   │   │   └── ...
+│   │   └── Prefabs/
+│   │       ├── Units/
+│   │       │   ├── Nexus/
+│   │       │   │   ├── Infantry/
+│   │       │   │   │   ├── AssaultTrooper.prefab
+│   │       │   │   │   └── ...
+│   │       │   │   └── Vehicles/
+│   │       │   │       ├── HoverTank.prefab
+│   │       │   │       └── ...
+│   │       │   └── Rust/
+│   │       │       └── ...
+│   │       ├── Buildings/
+│   │       │   ├── CommandCenter.prefab
+│   │       │   ├── Generator.prefab
+│   │       │   └── ...
+│   │       ├── UI/
+│   │       │   ├── SelectionBox.prefab
+│   │       │   ├── FloatingText.prefab
+│   │       │   └── WaypointMarker.prefab
+│   │       └── Effects/
+│   │           ├── LaserHit.prefab
+│   │           ├── PlasmaExplosion.prefab
+│   │           └── ...
+│   ├── Scenes/
+│   │   ├── MainMenu.unity
+│   │   ├── Campaign/
+│   │   │   ├── Mission01.unity
+│   │   │   ├── Mission02.unity
+│   │   │   └── ...
+│   │   ├── Multiplayer/
+│   │   │   ├── Map_01.unity
+│   │   │   └── Map_02.unity
+│   │   └── Sandbox.unity
+│   ├── Shaders/
+│   │   ├── NexusPrimeHologram.shader
+│   │   ├── NexusPrimeUI.shader
+│   │   ├── NexusPrimeHologramGrid.shader
+│   │   └── NexusPrimeEnergy.shader
+│   ├── Materials/
+│   │   ├── Units/
+│   │   │   ├── Nexus/
+│   │   │   │   ├── MetalicBlue.mat
+│   │   │   │   └── EnergyEmissive.mat
+│   │   │   └── Rust/
+│   │   │       ├── RustedMetal.mat
+│   │   │       └── ...
+│   │   ├── Buildings/
+│   │   ├── Environment/
+│   │   └── UI/
+│   ├── Models/
+│   │   ├── Units/
+│   │   │   ├── Nexus/
+│   │   │   │   ├── AssaultTrooper.fbx
+│   │   │   │   └── HoverTank.fbx
+│   │   │   └── Rust/
+│   │   │       └── ...
+│   │   ├── Buildings/
+│   │   ├── Environment/
+│   │   └── Props/
+│   ├── Textures/
+│   │   ├── UI/
+│   │   │   ├── Icons/
+│   │   │   │   ├── Resources/
+│   │   │   │   │   ├── Icon_Credits.png
+│   │   │   │   │   ├── Icon_Energy.png
+│   │   │   │   │   └── ...
+│   │   │   │   ├── Units/
+│   │   │   │   └── Tech/
+│   │   │   ├── Backgrounds/
+│   │   │   └── Buttons/
+│   │   ├── Units/
+│   │   ├── Buildings/
+│   │   └── Environment/
+│   ├── Animations/
+│   │   ├── Units/
+│   │   │   ├── Infantry/
+│   │   │   │   ├── AssaultTrooper/
+│   │   │   │   │   ├── Idle.anim
+│   │   │   │   │   ├── Run.anim
+│   │   │   │   │   └── ...
+│   │   │   │   └── ...
+│   │   │   └── Vehicles/
+│   │   ├── Buildings/
+│   │   └── UI/
+│   ├── Audio/
+│   │   ├── Music/
+│   │   │   ├── MainTheme.mp3
+│   │   │   ├── Campaign/
+│   │   │   └── ...
+│   │   ├── SFX/
+│   │   │   ├── Units/
+│   │   │   ├── UI/
+│   │   │   └── Environment/
+│   │   └── Voice/
+│   │       ├── English/
+│   │       ├── Italian/
+│   │       └── ...
+│   └── Plugins/
+│       ├── Android/
+│       ├── iOS/
+│       └── ...
+├── ProjectSettings/
+├── Packages/
+└── NexusPrime_Backend/
+    ├── server.js
+    ├── package.json
+    ├── database/
+    │   ├── schema.sql
+    │   └── migrations/
+    └── api/
+        ├── routes/
+        └── controllers/
